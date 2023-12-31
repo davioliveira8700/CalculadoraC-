@@ -6,7 +6,7 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
-            Soma();
+            Subtracao();
 
         }
         static void Soma()
@@ -19,6 +19,19 @@ namespace Calculator
             Console.WriteLine("");
             float soma = v1 + v2;
             Console.WriteLine($"O resultado da soma é = {soma}");
+
+        }
+        static void Subtracao()
+        {
+            Console.Clear();
+            Console.WriteLine("Digite o primeiro valor: ");
+            float v1 = float.Parse(Console.ReadLine());
+            Console.WriteLine("Segundo valor: ");
+            float v2 = float.Parse(Console.ReadLine());
+            Console.WriteLine("");
+            float subtracao = v1 - v2;
+            System.Console.WriteLine($"Resultado da subtração= {subtracao}");
+            Console.ReadKey();
 
         }
     }
